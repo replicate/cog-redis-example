@@ -2,7 +2,7 @@
 
 _Docker-compose setup for running a Cog model with the built-in Redis worker, to emulate how the model is deployed on replicate.com, and to provide an end-to-end example of the Redis worker API._
 
-It can be used to debug the case where a model works locally but doesn't work on replicate.com, even though the development environment is the same as on replicate.com (11G RAM, T4 GPU).
+You can use this project to debug the rare case where a model works locally but doesn't work on replicate.com, even though the development environment is the same as on replicate.com (11G RAM, T4 GPU).
 
 ## Usage
 
