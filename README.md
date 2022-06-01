@@ -31,7 +31,7 @@ $ RPOP output-queue
 "{\"status\": \"succeeded\", \"output\": \"hello world\", \"logs\": []}"
 ```
 
-## Usage during development
+## Use during development
 
 If you want to test the Redis worker during development, copy the file `docker-compose.yml` into your project's root directory.
 
@@ -52,3 +52,17 @@ $ IMAGE=cog-my-model docker-compose up
 ```
 
 And now you can push messages to the queue as in the previous section.
+
+## Use without GPU
+
+By default the docker-compose file runs the model with GPU. If you don't have a GPU or don't need that, comment out the following lines from docker-compose.yml:
+
+```
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+```
