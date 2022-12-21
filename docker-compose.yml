@@ -40,8 +40,8 @@ services:
       - "--upload-url=https://og.stablecog.com/test"
       - "--consumer-id=redis-worker"
       - "--model-id=sc_model"
-      - "--predict-timeout=120"
-      - "--max-failure-count=2000"
+      - "--predict-timeout=2000"
+      - "--max-failure-count=10000"
     restart: "on-failure"
     deploy:
       resources:
