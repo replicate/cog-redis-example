@@ -41,6 +41,7 @@ services:
       - "--consumer-id=redis-worker"
       - "--model-id=sc_model"
       - "--predict-timeout=120"
+      - "--max-failure-count=2000"
     restart: "on-failure"
     deploy:
       resources:
