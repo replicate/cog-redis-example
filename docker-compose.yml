@@ -37,7 +37,7 @@ services:
       - "--redis-host=redis"
       - "--redis-port=6379"
       - "--input-queue=predict-queue"
-      - "--upload-url=https://og.stablecog.com/api/test"
+      - "--upload-url=http://upload-server:5000/upload"
       - "--consumer-id=redis-worker"
       - "--model-id=sc_model"
       - "--predict-timeout=2000"
