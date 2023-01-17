@@ -9,7 +9,7 @@ You can use this project to debug the rare case where a model works locally but 
 First, start the docker-compose processes, specifying the model image you want to test:
 
 ```
-$ IMAGE=r8.im/replicate/hello-world@sha256:5c7d5dc6dd8bf75c1acaa8565735e7986bc5b66206b55cca93cb72c9bf15ccaa docker compose up
+$ IMAGE=r8.im/replicate/hello-world@sha256:5c7d5dc6dd8bf75c1acaa8565735e7986bc5b66206b55cca93cb72c9bf15ccaa docker-compose up
 ```
 
 In another shell, connect to Redis:
